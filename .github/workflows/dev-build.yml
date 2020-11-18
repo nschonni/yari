@@ -51,7 +51,7 @@ jobs:
 
       - uses: actions/checkout@v2
         with:
-          repository: mdn/content
+          repository: fiji-flo/machine-translation-testing-content
           path: mdn/content
 
       - uses: actions/checkout@v2
