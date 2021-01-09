@@ -39,7 +39,7 @@ test suite.
 The first thing to do is to run the _whole_ test suite now:
 
 ```bash
-./testing/scripts/functional-test.sh
+yarn test:functional
 ```
 
 That includes all the important pre-build, build, and starting the `jest`
@@ -51,7 +51,7 @@ yarn test:testing
 ```
 
 This assumes you've set the appropriate environment variables and built the
-content. Alternatively, you can run `./testing/scripts/functional-test.sh`
+content. Alternatively, you can run `yarn test:functional`
 which takes care of all of these things.
 
 ## Conditional testing in CI
@@ -102,7 +102,7 @@ the tests.
 In a separate terminal, run all the tests:
 
 ```sh
-./testing/scripts/functional-test.sh
+yarn test:functional
 ```
 
 As you notice, that shell script actually does a lot. It prebuilds the
@@ -173,7 +173,7 @@ Now you can run just the functional `jest` tests over and over:
 
 ```sh
 export TESTING_START_SERVER=false  # should be false by default anyway
-./testing/scripts/functional-test.sh
+yarn test:functional
 ```
 
 If in doubt, look at the file `.github/workflows/testing.yml` and what it does.
