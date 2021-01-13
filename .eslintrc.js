@@ -62,5 +62,13 @@ module.exports = {
         "node/no-unpublished-import": "off",
       },
     },
+    {
+      files: ["**/*.ejs"],
+      plugins: ["ejs-js"],
+      rules: {
+        "no-redeclare": "off",
+        "no-inner-declarations": "off",
+      },
+    },
   ],
 };
